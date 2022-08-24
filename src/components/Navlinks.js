@@ -6,22 +6,22 @@ export const NavLinks = [
   },
   {
     id: 2,
-    text: "About",
-    url: "/#about",
+    text: "Trade",
+    url: "/#",
+  },
+  {
+    id: 3,
+    text: "Win",
+    url: "/#",
   },
   {
     id: 4,
-    text: "Roadmap",
-    url: "/#roadmap",
+    text: "Earn",
+    url: "/#",
   },
   {
     id: 5,
-    text: "Team",
-    url: "/#team",
-  },
-  {
-    id: 6,
-    text: "Learn",
-    url: "/learn",
+    text: "NFT",
+    url: "/#",
   },
 ];

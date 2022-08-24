@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="container max-w-[1080px] mx-auto">
+      <div className="container max-w-[1260px] mx-auto px-6">
         <Hero />
       </div>
     </div>

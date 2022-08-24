@@ -5,7 +5,7 @@
 @layer base {
   html,
   body {
-    @apply scroll-smooth bg-[#e3f0f1];
+    @apply scroll-smooth bg-[#d3f1f3];
   }
   h1,
   h2,
