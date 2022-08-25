@@ -16,7 +16,7 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY >= 100 ? setShadow(true) : setShadow(false);
+      window.scrollY >= 10 ? setShadow(true) : setShadow(false);
     });
   }, []);
 
@@ -24,7 +24,7 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-[60px] duration-300 z-[100] shadow-lg bg-[#130f14] backdrop-blur-xl"
+          ? "fixed w-full h-[60px] duration-300 z-[100] shadow-lg bg-[#fafeff] backdrop-blur-xl"
           : "fixed w-full h-[90px] duration-300 z-[100]"
       }
     >
