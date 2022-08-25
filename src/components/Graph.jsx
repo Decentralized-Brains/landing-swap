@@ -2,7 +2,7 @@ import chart from "../assets/img/Chart.png";
 
 const Graph = () => {
   return (
-    <div className="my-28">
+    <div className="my-8 xl:my-28">
       <h2 className="text-indigo-500 text-center mb-8 pt-12">
         Decentralised <span className="text-black">Economoy</span>
       </h2>
@@ -25,7 +25,7 @@ const Graph = () => {
           </p>
         </div>
         <div>
-          <img className="mt-6" src={chart} alt="" />
+          <img className="mt-10 xl:mt-6" src={chart} alt="" />
           <p className="text-center py-12 font-semibold text-gray-500">
             Distribution of Tokens
           </p>

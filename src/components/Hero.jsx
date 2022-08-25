@@ -9,7 +9,7 @@ const Hero = () => {
     <div className="w-full h-screen grid place-items-center">
       <div className="grid xl:grid-cols-9 gap-6 xl:gap-20">
         <div className="xl:col-span-6 flex items-center p-4">
-          <div className="h-fit mt-6 xl:mt-0">
+          <div className="h-fit mt-20 xl:mt-0">
             <h1>Lorem ipsum dolor sit amet consectetur</h1>
             <p className="mt-6 mb-6 text-indigo-700">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
