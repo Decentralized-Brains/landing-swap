@@ -5,14 +5,14 @@ const Footer = () => {
     <div className="w-full bg-gray-800 mt-40">
       <div className="container max-w-[1260px] mx-auto px-6 grid xl:grid-cols-6 gap-12 py-20">
         <div className="col-span-3">
-          <h3 className="text-white font-bold">Header</h3>
+          <h3 className="text-white font-bold">Logo</h3>
           <p className="text-gray-400 pt-4">
             We develop advanced token cloud mining which is accessible for
             everyone. As we are trusted by thousands of miners and highly
             recommended by tech savvy.
           </p>
         </div>
-        <div>
+        {/* <div>
           <h3 className="text-white font-bold">Footer Header</h3>
           <ul className="text-gray-400">
             <li className="my-2">
@@ -61,7 +61,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );
