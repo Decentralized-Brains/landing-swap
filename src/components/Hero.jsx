@@ -10,17 +10,16 @@ const Hero = () => {
       <div className="grid xl:grid-cols-9 gap-6 xl:gap-20">
         <div className="xl:col-span-6 flex items-center p-4">
           <div className="h-fit mt-20 xl:mt-0">
-            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+            <h1>Register, Mine and Profit</h1>
             <p className="mt-6 mb-6 text-indigo-700">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
-              expedita commodi numquam deserunt. Et quidem optio possimus
-              distinctio necessitatibus deserunt?
+              We offer a mining ecosystem which will make you rich in no time.
+              Start mining today!
             </p>
             <a
               href="#"
               className="gradient-bg py-2 px-10 rounded-full text-white"
             >
-              Learm More
+              Start Mining
             </a>
           </div>
         </div>

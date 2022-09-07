@@ -12,13 +12,22 @@ const About = () => {
       <div className="text-center">
         <p className="uppercase text-xl text-gray-500">AOBUT US</p>
         <h2 className="uppercase text-indigo-500 py-2">
-          Lorem ipsum dolor sit amet
+          The Mission of Discount?
         </h2>
+        <p className="mt-4 text-lg font-semibold text-gray-500 max-w-[680px] mx-auto">
+          Discount is a free cloud mining platform developed by crypto
+          enthusiastic.
+        </p>
         <p className="mt-4 font-semibold text-gray-500 max-w-[680px] mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-          perspiciatis et, porro illo sunt eveniet nobis quisquam quam nisi
-          doloribus repudiandae hic voluptate dolor! Officiis ipsam quis a quod
-          rerum.
+          Our goal at Discount is to give miners a streamlined, reliable, and
+          secure cloud mining platform. One of the top cloud mining platforms in
+          the cryptocurrency industry for both experts and beginners is
+          Discount. We provide new miners ideal cloud mining solutions in
+          addition to free mining possibilities so they may test out our
+          services before upgrading to our premium mining plans. People do not
+          trust bitcoin mining with their hard-earned money since it is so
+          difficult. Discount gives customers the chance to try out our mining
+          services prior to purchasing premium programs.
         </p>
       </div>
       <div className="my-4 grid grid-cols-2 xl:grid-cols-3 max-w-[720px] mx-auto gap-2">

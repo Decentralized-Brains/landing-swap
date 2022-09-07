@@ -4,24 +4,38 @@ const Graph = () => {
   return (
     <div className="my-8 xl:my-28">
       <h2 className="text-indigo-500 text-center mb-8 pt-12">
-        Decentralised <span className="text-black">Economoy</span>
+        Advance Cloud Mining Technology
       </h2>
       <div className="md:grid grid-cols-2 gap-12 py-12">
         <div className="flex flex-col justify-center">
-          <h3 className="font-bold pb-4 text-2xl">Lorem ipsum</h3>
           <p className="text-indigo-800">
-            Our Native Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates amet commodi doloremque deserunt tenetur, cum minus
-            maiores vel quisquam itaque repellendus, iste cumque consequatur
-            voluptate suscipit, adipisci fugiat magni! Eligendi!
+            The Discount business is a group of blockchain experts who also
+            operate a platform for cloud mining cryptocurrencies online.
           </p>
           <br />
-          <h3 className="font-bold pb-4 text-2xl">Loremer ipsum</h3>
           <p className="text-indigo-800">
-            Our Native Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptates amet commodi doloremque deserunt tenetur, cum minus
-            maiores vel quisquam itaque repellendus, iste cumque consequatur
-            voluptate suscipit, adipisci fugiat magni! Eligendi!
+            The token will be purchase on an exchanger, it will then be bought
+            into trust wallet , which will be connected to the platform where it
+            will be mined or farmed.
+          </p>
+          <br />
+          <p className="text-indigo-800">
+            After the 14 days both the amount used to mine and the profit will
+            go to the trust wallet.During the withdrawal to trust wallet 40 % of
+            the total of the token to withdraw goes to another wallet (burn)
+            address Or you pay 30% of the total value of the token to the admin
+            wallet
+          </p>
+          <br />
+          <p className="text-indigo-800">
+            This choice will be made at the beginning of the plan when buying.
+            If skipped at the beginning the two(2) options should pop up at the
+            withdrawal stage.
+          </p>
+          <br />
+          <p className="text-indigo-800">
+            This will be the end of the first cycle. This same process will
+            while loop 10 more times.
           </p>
         </div>
         <div>
