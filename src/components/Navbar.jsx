@@ -9,6 +9,21 @@ import Meta from "../assets/img/Meta.png";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [account, setAccount] = useState("");
+
+  // CONNET WALLET
+  const connectWallet = async () => {
+    if (!account) {
+      try {
+        const accounts = await window.ethereum.request({
+          method: "eth_requestAccounts",
+        });
+        setAccount(accounts[0]);
+      } catch (err) {
+        toast.error("Could't connect!");
+      }
+    }
+  };
 
   const handleNav = () => {
     setNav(!nav);
@@ -73,11 +88,17 @@ const Navbar = () => {
             <AiFillSetting />
           </div>
 
-          <a href="#">
-            <button className="py-2 px-6 mt-2 gradient-bg text-white rounded-lg">
-              Connect Wallet
-            </button>
-          </a>
+          <button
+            className="py-2 px-6 mt-2 gradient-bg text-white rounded-lg disabled:opacity-70"
+            onClick={connectWallet}
+            disabled={account ? true : false}
+          >
+            {account
+              ? account.slice(0, 4) +
+                "..." +
+                account.slice(account.length - 4, account.length)
+              : "Connect Wallet"}
+          </button>
         </div>
       </div>
 
