@@ -20,7 +20,7 @@ const Navbar = () => {
         });
         setAccount(accounts[0]);
       } catch (err) {
-        toast.error("Could't connect!");
+        console.log("Could't connect!");
       }
     }
   };
