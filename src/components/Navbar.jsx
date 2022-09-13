@@ -48,8 +48,7 @@ const Navbar = () => {
           href="/#"
           className="hidden md:flex items-center justify-center gap-3 -mt-2"
         >
-          <img src={logo} className="w-[45px] " alt="" />
-          <span className="font-bold text-2xl">Logo</span>
+          <img src={logo} className="w-[100px] " alt="" />
         </a>
         <div className="flex items-center justify-center">
           <ul className="hidden md:flex md:gap-x-3 lg:gap-x-6 mt-5">
