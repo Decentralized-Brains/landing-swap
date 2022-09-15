@@ -39,7 +39,7 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-[60px] duration-300 z-[100] shadow-lg bg-[#fafeff] backdrop-blur-xl"
+          ? "fixed w-full h-[90px] duration-300 z-[100] shadow-lg bg-[#fafeff] backdrop-blur-xl"
           : "fixed w-full h-[90px] duration-300 z-[100]"
       }
     >
@@ -48,7 +48,7 @@ const Navbar = () => {
           href="/#"
           className="hidden md:flex items-center justify-center gap-3 -mt-2"
         >
-          <img src={logo} className="w-[100px] " alt="" />
+          <img src={logo} className="w-[150px] " alt="" />
         </a>
         <div className="flex items-center justify-center">
           <ul className="hidden md:flex md:gap-x-3 lg:gap-x-6 mt-5">

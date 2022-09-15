@@ -1,12 +1,12 @@
-import React from "react";
+import logo from "../assets/img/Logo.png";
 
 const Footer = () => {
   return (
     <div className="w-full bg-gray-800 mt-40">
       <div className="container max-w-[1260px] mx-auto px-6 grid xl:grid-cols-6 gap-12 py-20">
         <div className="col-span-3">
-          <h3 className="text-white font-bold">Logo</h3>
-          <p className="text-gray-400 pt-4">
+          <img src={logo} width="160px" alt="" />
+          <p className="text-gray-400 text-lg pt-4">
             We develop advanced token cloud mining which is accessible for
             everyone. As we are trusted by thousands of miners and highly
             recommended by tech savvy.

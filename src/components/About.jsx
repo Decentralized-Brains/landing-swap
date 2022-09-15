@@ -14,7 +14,7 @@ const About = () => {
         <h2 className="uppercase text-indigo-500 py-2">
           The Mission of Discount?
         </h2>
-        <p className="mt-4 text-lg font-semibold text-gray-500 max-w-[680px] mx-auto">
+        <p className="mt-4 text-2xl font-semibold text-gray-500 max-w-[680px] mx-auto">
           Discount is a free cloud mining platform developed by crypto
           enthusiastic.
         </p>
@@ -74,10 +74,10 @@ const About = () => {
           />
         </div>
       </div>
-
+      {/* 
       <button className="text-indigo-500 font-semibold border-2 border-indigo-500 rounded-full py-2 px-10 mt-6">
         Load More
-      </button>
+      </button> */}
     </div>
   );
 };

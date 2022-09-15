@@ -4,7 +4,7 @@ const Roadmap = () => {
   return (
     <div>
       <h2 className="text-indigo-500 text-center mb-8 pt-6">
-        How Does Cloud Mining Works?
+        How Does Discount Works?
       </h2>
 
       <div className="my-20 flex flex-col xl:flex-row gap-5 justify-center ">
@@ -16,9 +16,10 @@ const Roadmap = () => {
               alt=""
             />
           </div>
-          <h3 className="text-lg">You Register on Zeus-Mining</h3>
+          <h3 className="text-lg">Purchase Token on Exchanger</h3>
           <p className="mt-1 max-w-[300px]">
-            Register using your bitcoin wallet address, It takes only 1 minute.
+            Purchase Token on exchanger an it will be transferred to trust
+            wallet
           </p>
         </div>
 
@@ -29,9 +30,10 @@ const Roadmap = () => {
               alt=""
             />
           </div>
-          <h3 className="text-lg">Choose Hashpower and Upgrade</h3>
+          <h3 className="text-lg">Withdrawal Option</h3>
           <p className="mt-1 max-w-[300px]">
-            Upgrade free mining plans to premium, more power, more bitcoins.
+            During the withdrawal to trust wallet 40 % of the token goes to
+            (burn) address Or 30% of the token to the admin wallet.
           </p>
         </div>
 
@@ -42,9 +44,9 @@ const Roadmap = () => {
               alt=""
             />
           </div>
-          <h3 className="text-lg">The Mining Process Begins</h3>
+          <h3 className="text-lg">Mining Process </h3>
           <p className="mt-1 max-w-[300px]">
-            We are super transparent, You will see live bitcoin mining.
+            Mining process takes 14 days for a BLOCK to complete.
           </p>
         </div>
 
@@ -55,10 +57,10 @@ const Roadmap = () => {
               alt=""
             />
           </div>
-          <h3 className="text-lg">Receive Daily Your Mined Bitcoins</h3>
+          <h3 className="text-lg">Receive your Reward</h3>
           <p className="mt-1 max-w-[300px]">
-            Withdraw your bitcoin at any time, No minimum payout for premium
-            users.
+            Reward will be given to the influencers from 100 BUSD to 10 Million
+            BUSD based on reference.
           </p>
         </div>
       </div>
