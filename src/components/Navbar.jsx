@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu, AiFillSetting } from "react-icons/ai";
 
+import { useContext } from "react";
+import SmartContract from "../context/SmartContract";
+
 import logo from "../assets/img/Logo.png";
 import { NavLinks } from "./Navlinks";
 import Meta from "../assets/img/Meta.png";
 // import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
+  const { address, setAddress } = useContext(SmartContract);
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [account, setAccount] = useState("");
 
   // CONNET WALLET
   const connectWallet = async () => {
-    if (!account) {
+    if (!address) {
       try {
         const accounts = await window.ethereum.request({
           method: "eth_requestAccounts",
         });
-        setAccount(accounts[0]);
+        setAddress(accounts[0]);
       } catch (err) {
         console.log("Could't connect!");
       }
@@ -88,16 +91,24 @@ const Navbar = () => {
           </div>
 
           <button
-            className="py-2 px-6 mt-2 gradient-bg text-white rounded-lg disabled:opacity-70"
+            className="py-1 md:py-2 px-2 md:px-6 mt-2 gradient-bg text-white rounded-lg disabled:opacity-70"
             onClick={connectWallet}
-            disabled={account ? true : false}
+            disabled={address ? true : false}
           >
-            {account
-              ? account.slice(0, 4) +
+            {address
+              ? address.slice(0, 4) +
                 "..." +
-                account.slice(account.length - 4, account.length)
+                address.slice(address.length - 4, address.length)
               : "Connect Wallet"}
           </button>
+          {address && (
+            <button
+              className="py-1 md:py-2 px-2 md:px-6 mt-2 gradient-bg text-white rounded-lg disabled:opacity-70 ml-3"
+              onClick={() => setAddress("")}
+            >
+              Disconnect
+            </button>
+          )}
         </div>
       </div>
 

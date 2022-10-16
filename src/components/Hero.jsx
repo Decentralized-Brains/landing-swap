@@ -4,12 +4,25 @@ import { RiArrowRightSLine } from "react-icons/ri";
 import T from "../assets/img/T.png";
 import Bit from "../assets/img/Bit.png";
 
+import { useState } from "react";
+import { useContext } from "react";
+import SmartContract from "../context/SmartContract";
+
 const Hero = () => {
+  const { addOrder } = useContext(SmartContract);
+  const [value, setValue] = useState(0);
+
+  const orderHandler = () => {
+    addOrder(value);
+  };
+
   return (
     <div className="w-full h-screen grid place-items-center">
       <div className="grid xl:grid-cols-9 gap-6 xl:gap-20">
         <div className="xl:col-span-6 flex items-center p-4">
           <div className="h-fit mt-20 xl:mt-0">
+            <input type="text" onChange={(e) => setValue(e.target.value)} />
+            <button onClick={orderHandler}>Add Order</button>
             <h1>Register, Mine and Profit</h1>
             <p className="mt-6 mb-6 text-indigo-700">
               We offer a mining ecosystem which will make you rich in no time.
