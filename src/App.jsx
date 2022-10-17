@@ -3,11 +3,11 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <ContractProvidor>
-      <div className="App">
+    <div className="App">
+      <ContractProvidor>
         <Home />
-      </div>
-    </ContractProvidor>
+      </ContractProvidor>
+    </div>
   );
 }
 

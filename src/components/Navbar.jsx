@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu, AiFillSetting } from "react-icons/ai";
+import ABI from "../utils/ABI.json";
+import { ethers } from "ethers";
 
 import { useContext } from "react";
 import SmartContract from "../context/SmartContract";
@@ -10,12 +12,29 @@ import Meta from "../assets/img/Meta.png";
 // import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
-  const { address, setAddress } = useContext(SmartContract);
+  const { address, setAddress, setContract } = useContext(SmartContract);
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
+  const configContract = () => {
+    const DeployAddress = "0x8B22210dd31EDB8922ee97AAa0C556Ce3809f828";
+    const providor = new ethers.providers.Web3Provider(window.ethereum);
+    const contract = new ethers.Contract(
+      DeployAddress,
+      ABI,
+      providor.getSigner()
+    );
+    setContract(contract);
+  };
+
+  useEffect(() => {
+    configContract();
+  }, [address]);
+
   // CONNET WALLET
   const connectWallet = async () => {
+    if (!window.ethereum) return alert("Install Metamask!");
+
     if (!address) {
       try {
         const accounts = await window.ethereum.request({
