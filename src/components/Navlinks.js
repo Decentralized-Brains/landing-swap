@@ -24,4 +24,9 @@ export const NavLinks = [
     text: "NFT",
     url: "/#",
   },
+  {
+    id: 6,
+    text: "Dashboard",
+    url: "/dashboard",
+  },
 ];

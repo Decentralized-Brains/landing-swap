@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu, AiFillSetting } from "react-icons/ai";
-import ABI from "../utils/ABI.json";
+import ABI from "../../ABI.json";
 import { ethers } from "ethers";
 
 import { useContext } from "react";
@@ -9,15 +9,19 @@ import SmartContract from "../context/SmartContract";
 import logo from "../assets/img/Logo.png";
 import { NavLinks } from "./Navlinks";
 import Meta from "../assets/img/Meta.png";
+
+import { Link } from "react-router-dom";
 // import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
-  const { address, setAddress, setContract } = useContext(SmartContract);
+  const { address, setAddress, setContract, getAllOrderHandler } =
+    useContext(SmartContract);
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
   const configContract = () => {
-    const DeployAddress = "0x8B22210dd31EDB8922ee97AAa0C556Ce3809f828";
+    //DEPLOYED ADDRESS
+    const DeployAddress = "0x949ccfE6623D030d4b55eB3B11aBE4613360Fd2A";
     const providor = new ethers.providers.Web3Provider(window.ethereum);
     const contract = new ethers.Contract(
       DeployAddress,
@@ -41,6 +45,7 @@ const Navbar = () => {
           method: "eth_requestAccounts",
         });
         setAddress(accounts[0]);
+        getAllOrderHandler();
       } catch (err) {
         console.log("Could't connect!");
       }
@@ -75,11 +80,11 @@ const Navbar = () => {
         <div className="flex items-center justify-center">
           <ul className="hidden md:flex md:gap-x-3 lg:gap-x-6 mt-5">
             {NavLinks.map((data) => (
-              <a href={data.url} key={data.id}>
+              <Link to={data.url} key={data.id}>
                 <li className="c-link ml-0 mb-6 w-fit text-gray-700 hover:border-b border-gray-700 hover:text-cyan-600 duration-300">
                   {data.text}
                 </li>
-              </a>
+              </Link>
             ))}
             <li className="c-link ml-0 mb-6 w-fit text-gray-700 hover:border-b border-gray-700 hover:text-cyan-600 duration-300">
               <a

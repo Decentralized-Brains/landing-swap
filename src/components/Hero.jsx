@@ -48,27 +48,6 @@ const Hero = () => {
       <div className="grid xl:grid-cols-9 gap-6 xl:gap-20">
         <div className="xl:col-span-6 flex items-center p-4">
           <div className="h-fit mt-20 xl:mt-0">
-            <div className="py-10">
-              <input
-                className="py-2 px-2 rounded-md focus:outline-none"
-                type="number"
-                onChange={(e) => setValue(e.target.value)}
-                placeholder="Enter amount"
-              />
-              <button
-                className="bg-indigo-500 rounded-md py-2 px-3 text-white"
-                onClick={orderHandler}
-              >
-                Add Order
-              </button>
-              <button
-                className="bg-green-500 ml-2 rounded-md py-2 px-3 text-white"
-                onClick={claimOrder}
-              >
-                Claim Order
-              </button>
-            </div>
-
             <h1>Register, Mine and Profit</h1>
             <p className="mt-6 mb-6 text-indigo-700">
               We offer a mining ecosystem which will make you rich in no time.
